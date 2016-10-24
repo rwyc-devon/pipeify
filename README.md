@@ -15,7 +15,7 @@ It's a tiny little script. Put it in your `$PATH` somewhere.
 
 ##Usage
 
-'pipeify' will simply run the program you specify, with the arguments you
+`pipeify` will simply run the program you specify, with the arguments you
 specify, with the name of the tempfile as the final argument.
 
 ```
