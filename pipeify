@@ -1,0 +1,9 @@
+#!/bin/bash
+program=$(which cat)
+which $1 > /dev/null && program="$(which $1)"
+shift
+args=$@
+file=$(mktemp "$(basename $0).XXXXXXXX")
+cat <&0 > "$file"
+$program $args "$file"
+rm "$file"
